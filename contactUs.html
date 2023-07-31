@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap-utilities.css"> -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap-grid.css">
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap-reboot.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #c7d0d5;
+            height: 700px;
+        }
+
+        .row{
+            --si-blue: #0d6efd;
+    --si-indigo: #6610f2;
+    --si-purple: #6f42c1;
+    --si-pink: #d63384;
+    --si-red: #dc3545;
+    --si-orange: #fd7e14;
+    --si-yellow: #ffc107;
+    --si-green: #198754;
+    --si-teal: #20c997;
+    --si-cyan: #0dcaf0;
+    --si-black: #000;
+    --si-white: #fff;
+    --si-gray: #9397ad;
+    --si-gray-dark: #33354d;
+    --si-gray-100: #f3f6ff;
+    --si-gray-200: #eff2fc;
+    --si-gray-300: #e2e5f1;
+    --si-gray-400: #d4d7e5;
+    --si-gray-500: #b4b7c9;
+    --si-primary: #6366f1;
+    --si-secondary: #eff2fc;
+    --si-success: #22c55e;
+    --si-info: #4c82f7;
+    --si-warning: #ffba08;
+    --si-danger: #ef4444;
+    --si-light: #fff;
+    --si-dark: #0b0f19;
+    --si-primary-rgb: 99, 102, 241;
+    --si-secondary-rgb: 239, 242, 252;
+    --si-success-rgb: 34, 197, 94;
+    --si-info-rgb: 76, 130, 247;
+    --si-warning-rgb: 255, 186, 8;
+    --si-danger-rgb: 239, 68, 68;
+    --si-light-rgb: 255, 255, 255;
+    --si-dark-rgb: 11, 15, 25;
+    --si-white-rgb: 255, 255, 255;
+    --si-black-rgb: 0, 0, 0;
+    --si-body-color-rgb: 86, 89, 115;
+    --si-body-bg-rgb: 255, 255, 255;
+    --si-font-sans-serif: "Manrope", sans-serif;
+    --si-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --si-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --si-body-font-family: var(--si-font-sans-serif);
+    --si-body-font-size: 1rem;
+    --si-body-font-weight: 400;
+    --si-body-line-height: 1.6;
+    --si-border-width: 1px;
+    --si-border-style: solid;
+    --si-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --si-border-radius: 0.375rem;
+    --si-border-radius-sm: 0.25rem;
+    --si-border-radius-lg: 0.5rem;
+    --si-border-radius-xl: 1rem;
+    --si-border-radius-2xl: 2rem;
+    --si-border-radius-pill: 50rem;
+    --si-link-color: #6366f1;
+    --si-link-hover-color: #3e41ee;
+    --si-highlight-bg: #fff3cd;
+    --si-user-selection-color: rgba(var(--si-primary-rgb), 0.22);
+    --si-gray-600: rgba(255, 255, 255, .5);
+    --si-gray-700: rgba(255, 255, 255, .7);
+    --si-gray-800: rgba(255, 255, 255, .85);
+    --si-gray-900: #fff;
+    --si-body-bg: #0b0f19;
+    --si-body-color: rgba(255, 255, 255, 0.7);
+    --si-secondary-bg: rgba(255, 255, 255, .04);
+    --si-heading-link-color: rgba(255, 255, 255, 0.85);
+    --si-heading-link-hover-color: #6366f1;
+    --si-nav-link-color: rgba(255, 255, 255, 0.85);
+    --si-border-color: rgba(255, 255, 255, 0.14);
+    --si-code-color: #f33185;
+    font-family: var(--si-body-font-family);
+    font-size: var(--si-body-font-size);
+    font-weight: var(--si-body-font-weight);
+    line-height: var(--si-body-line-height);
+    color: var(--si-body-color);
+    text-align: var(--si-body-text-align);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    --si-gutter-x: 1.5rem;
+    --si-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--si-gutter-y));
+    margin-right: calc(-0.5*var(--si-gutter-x));
+    margin-left: calc(-0.5*var(--si-gutter-x));
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+        }
+        .text-gradient-primary {
+    background: linear-gradient(to left,#fdfdfd,#0dcaf0,#fdfdfd,#0dcaf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color:#162737; height: 100px;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="Laptop Ecommerce" style="height: 80px; width: 300px;">
+            </a>
+            <!-- Navigation Links -->
+			<ul class="navbar-nav me-auto" style="padding-left: 700px;">
+				<li class="nav-item">
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-info" type="submit">Search</button>
+					</form>
+				</li>
+			</ul>
+			<!-- Shopping Cart and Profile -->
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+					<span class="icon" style="color: #0dcaf0;"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+							height="40" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+							<path
+								d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+						</svg></span>
+					<span class="icon" style="color: #0dcaf0; padding: 15px;"><a data-bs-target="#mymodal"
+							data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40"
+								fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+								<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+								<path fill-rule="evenodd"
+									d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+							</svg></a></span>
+				</li>
+			</ul>
+        </div>
+    </nav><br>
+    
+    <ul class="nav nav-tabs" style="padding-left: 40px;">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="homepage1.html">Home</a>
+      </li>
+      <li class="nav-item" style="margin-left: 20px;">
+        <a class="nav-link" href="product.html">Products</a>
+      </li>
+      <li class="nav-item" style="margin-left: 20px;">
+        <a class="nav-link" href="#">Category</a>
+      </li>
+      <li class="nav-item" style="margin-left: 20px;">
+        <a class="nav-link active" href="contactUs.html" style="background-color: #60a9ed;">Contact Us</a>
+        </li>
+      
+      </ul>
+
+      <div class="pt-2 mt-4"
+        style="margin-left: 100px; margin-right: 100px; background-color: #162737;">
+    <div class="row pt-md-2 pt-lg-5 pb-2 pb-md-4" style="display: flex; padding-left: 200px;  color: #fff;">
+      <div class="col-xxl-4 col-xl-5 col-lg-6 pt-3 mt-3">
+        <h1 class="h3 mb-2">Want to work with us?</h1><br>
+        <h2 class="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">Let's talk!</h2>
+        <div class="nav d-block lead pt-lg-5">
+          <a href="#" class="nav-link fw-normal text-decoration-underline p-0 mb-1" style="color: #fff;"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;email@example.com</a>
+          <div class="text-nav"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp; +1 406 555-0120</div>
+          <div class="text-nav"><i class="fa fa-map-marker" aria-hidden="true"></i>  &nbsp; &nbsp;Rajkot, Gujarat</div>
+        </div>
+      </div>
+      <!-- pt-3 pt-md-4 pt-lg-3 mt-3 -->
+      <!-- offset-xl-1 offset-xxl-2  -->
+        <div class="col-lg-6">
+          <form class="needs-validation" novalidate="">
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <!-- <label for="fn" class="form-label fs-base">Full name</label> -->
+                <input type="text" class="form-control form-control-lg" id="fn" required="" placeholder="First Name">
+                <div class="invalid-feedback">Please enter your full name!</div>
+              </div>
+              <div class="col-sm-6">
+                <!-- <label for="email" class="form-label fs-base">Email</label> -->
+                <input type="email" class="form-control form-control-lg" id="email" required="" placeholder="Last Name">
+                <div class="invalid-feedback">Please provide a valid email address!</div>
+              </div>
+              <div class="col-12 pb-2">
+                <!-- <label for="message" class="form-label fs-base">Message</label> -->
+                <textarea class="form-control form-control-lg" id="message" rows="3" required="" placeholder="Type your message here ..."></textarea>
+                <div class="invalid-feedback">Please provide a valid email address!</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Contact Us</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div><br>
+      <footer class="cs-footer pt-3" style="background-color: #162737; opacity: 0.9;">
+		
+        <p class="nav d-block" style="color: #fff;" align="center">
+          © All rights reserved. Made by
+          <a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">Foram Mavani</a>
+        </p>
+      </footer>
+    <script src="javascript2.js"></script>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+document.querySelector("body > main > div.container.mb-5.pb-3 > div > div > section > div")
+document.querySelector("body > main > div.container.mb-5.pb-3 > div > div > section > div > div:nth-child(2) > div > div.d-flex.justify-content-center.justify-content-sm-start.pt-3 > button.btn.bg-faded-accent.btn-icon.me-2")
+document.querySelector("body > main > div.container.mb-5.pb-3 > div > div > section > div > div:nth-child(2) > div > div.d-flex.justify-content-center.justify-content-sm-start.pt-3 > button.btn.bg-faded-info.btn-icon.me-2")
+document.querySelector("body > main > div.container.mb-5.pb-3 > div > div > section > div > div:nth-child(2) > div > div.d-flex.justify-content-center.justify-content-sm-start.pt-3 > button.btn.bg-faded-danger.btn-icon")

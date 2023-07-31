@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Admin</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+        body {
+            background-color: #c7d0d5;
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color:#162737; height: 100px;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="Laptop Ecommerce" style="height: 80px; width: 300px;">
+            </a>
+            <!-- Navigation Links -->
+			<ul class="navbar-nav me-auto" style="padding-left: 650px;">
+				<li class="nav-item">
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-info" type="submit">Search</button>
+					</form>
+				</li>
+			</ul>
+
+			<!-- Shopping Cart and Profile -->
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+
+					<span class="icon" style="color: #0dcaf0;"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+							height="40" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+							<path
+								d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+						</svg></span>
+					<span class="icon" style="color: #0dcaf0; padding: 15px;"><a data-bs-target="#mymodal"
+							data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40"
+								fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+								<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+								<path fill-rule="evenodd"
+									d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+							</svg></a></span>
+				</li>
+			</ul>
+        </div>
+    </nav><br>
+
+    <ul class="nav nav-tabs" style="padding-left: 40px;">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="homepage1.html">Home</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+          <a class="nav-link active" href="product.html" style="background-color: #60a9ed;">Products</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+          <a class="nav-link" href="#">Category</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+          <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+        
+        </ul><br>
+
+
+    <div class="pt-2"
+        style="margin-left: 200px; margin-right: 200px; padding-left: 30px; padding-right: 30px; background-color: #162737;">
+        <!-- Title-->
+        <a href="addProduct.html"><button class="btn btn-outline-primary btn-sm px-4 py-3" type="button" style="margin-top: 20px;">Add Products</button></a>
+        <div class="d-sm-flex flex-wrap justify-content-between align-items-center border-bottom">
+            <h2 class="h3 py-2 me-2 text-center text-sm-start" style="color: beige;">Your products<span
+                    class="badge bg-faded-primary fs-sm text-body align-middle ms-2">5</span></h2>
+            <div class="py-2">
+                <div class="d-flex flex-nowrap align-items-center pb-3">
+                    <label class="form-label fw-normal text-nowrap mb-0 me-2" for="sorting" style="color: beige;">Sort
+                        by:</label>
+                    <select class="form-select form-select-sm me-2" id="sorting">
+                        <option>Category</option>
+                        <option>Product Name</option>
+                        <option>Price</option>
+                        <option>Your Rating</option>
+                        <option>Updates</option>
+                    </select>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="d-block d-sm-flex align-items-center py-4 border-bottom"><a
+                class="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto" href="marketplace-single.html"
+                style="width: 12.5rem;"><img class="rounded-3" src="product5.jpg" alt="Product"
+                    style="height: 200px; width: 300px;"></a>
+            <div class="text-center text-sm-start" style="padding-left: 150px;">
+                <h3 class="h6 product-title mb-2"><a href="marketplace-single.html">Lenovo Ideapad slim 3 Intel Core i3</a>
+                </h3>
+                <div class="d-inline-block text-accent" style="color: beige;">$539.<small>00</small></div>
+                <div class="d-inline-block text-accent fs-ms border-start ms-2 ps-2" style="color: beige;">Color: <span
+                        class="fw-medium">Jet Black</span></div>
+                <div class="d-inline-block text-accent fs-ms border-start ms-2 ps-2" style="color: beige;">Categry:
+                    <span class="fw-medium">Professional</span></div><br>
+                <div class="d-flex justify-content-center justify-content-sm-start pt-3">
+                    <button class="btn bg-faded-info btn-icon me-2" id="btn1" type="button" data-bs-toggle="tooltip"
+                        aria-label="Download" data-bs-original-title="Download"><i class="fa fa-download text-info"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-warning btn-icon me-2" id="btn2" type="button" data-bs-toggle="tooltip"
+                        aria-label="Edit" data-bs-original-title="Edit"><i class="fa fa-pencil-square-o text-warning"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-danger btn-icon" id="btn3" type="button" data-bs-toggle="tooltip"
+                        aria-label="Delete" data-bs-original-title="Delete"><i class="fa fa-trash-o text-danger"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="d-block d-sm-flex align-items-center py-4 border-bottom"><a
+                class="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto" href="marketplace-single.html"
+                style="width: 12.5rem;"><img class="rounded-3" src="product3.jpg" alt="Product"
+                    style="height: 200px; width: 300px;"></a>
+            <div class="text-center text-sm-start" style="padding-left: 150px;">
+                <h3 class="h6 product-title mb-2"><a href="marketplace-single.html">HP 15s, 11th Gen Intel Core i3 8GB RAM</a></h3>
+                <div class="d-inline-block text-accent" style="color: beige;">$520.<small>00</small></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Color: <span
+                        class="fw-medium">Grey </span></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Category: <span
+                        class="fw-medium">Creative</span></div>
+                <div class="d-flex justify-content-center justify-content-sm-start pt-3">
+                    <button class="btn bg-faded-info btn-icon me-2" id="btn1" type="button" data-bs-toggle="tooltip"
+                        aria-label="Download" data-bs-original-title="Download"><i class="fa fa-download text-info"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-warning btn-icon me-2" id="btn2" type="button" data-bs-toggle="tooltip"
+                        aria-label="Edit" data-bs-original-title="Edit"><i class="fa fa-pencil-square-o text-warning"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-danger btn-icon" id="btn3" type="button" data-bs-toggle="tooltip"
+                        aria-label="Delete" data-bs-original-title="Delete"><i class="fa fa-trash-o text-danger"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="d-block d-sm-flex align-items-center py-4 border-bottom"><a
+                class="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto" href="marketplace-single.html"
+                style="width: 12.5rem;"><img class="rounded-3" src="product2.jpg" alt="Product"
+                    style="height: 200px; width: 300px;"></a>
+            <div class="text-center text-sm-start" style="padding-left: 150px;">
+                <h3 class="h6 product-title mb-2"><a href="marketplace-single.html">HP 15s, 11th Gen Intel Core i3 8GB RAM</a></h3>
+                <div class="d-inline-block text-accent" style="color: beige;">$600.<small>00</small></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Color: <span
+                        class="fw-medium">Silver</span></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Category: <span
+                        class="fw-medium">professional</span></div>
+                <div class="d-flex justify-content-center justify-content-sm-start pt-3">
+                    <button class="btn bg-faded-info btn-icon me-2" id="btn1" type="button" data-bs-toggle="tooltip"
+                        aria-label="Download" data-bs-original-title="Download"><i class="fa fa-download text-info"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-warning btn-icon me-2" id="btn2" type="button" data-bs-toggle="tooltip"
+                        aria-label="Edit" data-bs-original-title="Edit"><i class="fa fa-pencil-square-o text-warning"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-danger btn-icon" id="btn3" type="button" data-bs-toggle="tooltip"
+                        aria-label="Delete" data-bs-original-title="Delete"><i class="fa fa-trash-o text-danger"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="d-block d-sm-flex align-items-center py-4 border-bottom"><a
+                class="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto" href="marketplace-single.html"
+                style="width: 12.5rem;"><img class="rounded-3" src="product1.jpg" alt="Product"
+                    style="height:200px; width: 300px;"></a>
+            <div class="text-center text-sm-start" style="padding-left: 150px;">
+                <h3 class="h6 product-title mb-2"><a href="marketplace-single.html">Samsung Galaxy Book2 Pro 360 Intel 12th Gen i7</a></h3>
+                <div class="d-inline-block text-accent" style="color: beige;">$579.<small>00</small></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Color: <span
+                        class="fw-medium">Dark Blue</span></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Category: <span
+                        class="fw-medium">Creative</span></div>
+                <div class="d-flex justify-content-center justify-content-sm-start pt-3">
+                    <button class="btn bg-faded-info btn-icon me-2" id="btn1" type="button" data-bs-toggle="tooltip"
+                        aria-label="Download" data-bs-original-title="Download"><i class="fa fa-download text-info"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-warning btn-icon me-2" id="btn2" type="button" data-bs-toggle="tooltip"
+                        aria-label="Edit" data-bs-original-title="Edit"><i class="fa fa-pencil-square-o text-warning"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-danger btn-icon" id="btn3" type="button" data-bs-toggle="tooltip"
+                        aria-label="Delete" data-bs-original-title="Delete"><i class="fa fa-trash-o text-danger"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="d-block d-sm-flex align-items-center pt-4 pb-2"><a
+                class="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto" href="marketplace-single.html"
+                style="width: 12.5rem;"><img class="rounded-3" src="product4.png" alt="Product"
+                    style="height: 200px; width: 300px;"></a>
+            <div class="text-center text-sm-start" style="padding-left: 150px;">
+                <h3 class="h6 product-title mb-2"><a href="marketplace-single.html">Lenovo Legion 5 Pro</a></h3>
+                <div class="d-inline-block text-accent" style="color: beige;">$620.<small>00</small></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Color: <span
+                        class="fw-medium">Matt Black</span></div>
+                <div class="d-inline-block fs-ms border-start ms-2 ps-2" style="color: beige;">Category: <span
+                        class="fw-medium">Gaming</span></div>
+                <div class="d-flex justify-content-center justify-content-sm-start pt-3">
+                    <button class="btn bg-faded-info btn-icon me-2" id="btn1" type="button" data-bs-toggle="tooltip"
+                        aria-label="Download" data-bs-original-title="Download"><i class="fa fa-download text-info"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-warning btn-icon me-2" id="btn2" type="button" data-bs-toggle="tooltip"
+                        aria-label="Edit" data-bs-original-title="Edit"><i class="fa fa-pencil-square-o text-warning"
+                            aria-hidden="true"></i></button>
+                    <button class="btn bg-faded-danger btn-icon" id="btn3" type="button" data-bs-toggle="tooltip"
+                        aria-label="Delete" data-bs-original-title="Delete"><i class="fa fa-trash-o text-danger"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <footer class="cs-footer pt-3" style="background-color: #162737; opacity: 0.9;">
+		
+		<p class="nav d-block" style="color: #fff;" align="center">
+			© All rights reserved. Made by
+			<a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">Foram Mavani</a>
+		</p>
+	</footer>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.min.js"></script>
+    <script src="javascript3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x)*-.5);
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+.nav-vertical .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+}
+.nav-link {
+    font-weight: 500;
+}
+.dropdown-toggle, .dropend-toggle {
+    overflow: hidden;
+}
+.text-reset {
+    --bs-text-opacity: 1;
+    color: inherit
+}
+.fs-lg {
+    font-size: 1.125rem
+}
+.mb-6 {
+    margin-bottom: 1.5rem
+}
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.dropdown-toggle {
+    white-space: nowrap;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    cursor: pointer;
+}
+user agent stylesheet
+li {
+    text-align: -webkit-match-parent;
+}
+/* .nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.dropdown-toggle[data-bs-toggle=collapse]:after {
+    transform-origin: center center;
+    transition: all .1s ease-in-out;
+}
+.dropdown-toggle:after {
+    content: "\e92e";
+}
+.dropdown-toggle:after, .dropend-toggle:after {
+    border: 0;
+    float: right;
+    font-family: Feather;
+    margin-left: 0.255em;
+}
+.dropdown-toggle:after {
+    display: inline-block;
+    vertical-align: middle;
+}
+*, :after, :before {
+    box-sizing: border-box;
+} */
+
+.text-gray-350[href]:hover, .text-gray-400 {
+    color: #909090!important;
+}
+.pagination-sm {
+    font-size: .9375rem;
+}
+.pagination {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.pagination {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}

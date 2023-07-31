@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Products</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style4.css">
+
+    <style>
+        body {
+            background-color: #c7d0d5;
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color:#162737; height: 100px;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="Laptop Ecommerce" style="height: 80px; width: 300px;">
+            </a>
+            <!-- Navigation Links -->
+            <ul class="navbar-nav me-auto" style="padding-left: 680px;">
+                <li class="nav-item">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+
+            <!-- Shopping Cart and Profile -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+
+                    <span class="icon" style="color: #0dcaf0;"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                            height="40" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+                        </svg></span>
+                    <span class="icon" style="color: #0dcaf0; padding: 15px;"><a data-bs-target="#mymodal"
+                            data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40"
+                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg></a></span>
+                </li>
+            </ul>
+        </div>
+    </nav><br>
+
+    <ul class="nav nav-tabs" style="padding-left: 40px;">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="homepage1.html">Home</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link active" href="product.html" style="background-color: #60a9ed;">Products</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link" href="Category.html">Category</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+        </li>
+
+    </ul><br>
+    <button class="btn btn-outline-primary btn-sm px-4 py-2" type="button"
+        style="margin-top: 20px; margin-left: 100px;">G/P/C</button><br>
+    <br>
+    <div class="pt-4 pb-3"
+        style="margin-left: 100px; margin-right: 100px; padding-left: 30px; padding-right: 30px; background-color: #162737;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3" style="background-color: #fff;">
+
+                    <!-- Filters -->
+                    <form class="mb-10 mb-md-0">
+                        <ul class="nav nav-vertical" id="filterNav">
+                            <li class="nav-item">
+                                <!-- Toggle -->
+                                <a class="nav-link dropdown-toggle fs-lg text-reset border-bottom mb-6"
+                                    data-bs-toggle="collapse" href="#categoryCollapse" aria-expanded="true">Filter</a>
+                                <!-- Collapse -->
+                                <div class="collapse show" id="categoryCollapse">
+                                    <div class="form-group">
+                                        <ul class="list-styled mb-0" id="productsNav">
+                                            <li class="list-styled-item">
+                                                <!-- Toggle -->
+                                                <a class="list-styled-link" data-bs-toggle="collapse"
+                                                    href="#dressesCollapse" aria-expanded="true">Brands</a>
+                                                <!-- Collapse -->
+                                                <div class="collapse show" id="dressesCollapse"
+                                                    data-bs-parent="#productsNav">
+                                                    <div class="py-4 ps-5">
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesOne"
+                                                                type="checkbox">
+                                                            <label class="form-check-label"
+                                                                for="dressesOne">Dell</label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesTwo"
+                                                                type="checkbox" checked="">
+                                                            <label class="form-check-label"
+                                                                for="dressesTwo">lenovo</label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesThree"
+                                                                type="checkbox">
+                                                            <label class="form-check-label"
+                                                                for="dressesThree">Hp</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" id="dressesFour"
+                                                                type="checkbox">
+                                                            <label class="form-check-label"
+                                                                for="dressesFour">MacBook</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-styled-item">
+                                                <!-- Toggle -->
+                                                <a class="list-styled-link" data-bs-toggle="collapse"
+                                                    href="#dressesCollapse" aria-expanded="true">Prices</a>
+                                                <!-- Collapse -->
+                                                <div class="collapse show" id="dressesCollapse"
+                                                    data-bs-parent="#productsNav">
+                                                    <div class="py-4 ps-5">
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesOne"
+                                                                type="checkbox">
+                                                            <label class="form-check-label" for="dressesOne">
+                                                                $300-$400
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesTwo"
+                                                                type="checkbox" checked="">
+                                                            <label class="form-check-label" for="dressesTwo">
+                                                                $400-$500
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesThree"
+                                                                type="checkbox">
+                                                            <label class="form-check-label" for="dressesThree">
+                                                                $500-$600
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" id="dressesFour"
+                                                                type="checkbox">
+                                                            <label class="form-check-label" for="dressesFour">
+                                                                $600-$700
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-styled-item">
+                                                <!-- Toggle -->
+                                                <a class="list-styled-link" data-bs-toggle="collapse"
+                                                    href="#dressesCollapse" aria-expanded="true">Specifications</a>
+
+                                                <!-- Collapse -->
+                                                <div class="collapse show" id="dressesCollapse"
+                                                    data-bs-parent="#productsNav">
+                                                    <div class="py-4 ps-5">
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesOne"
+                                                                type="checkbox">
+                                                            <label class="form-check-label" for="dressesOne">High
+                                                                RAM</label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesTwo"
+                                                                type="checkbox" checked="">
+                                                            <label class="form-check-label" for="dressesTwo">Low
+                                                                RAM</label>
+                                                        </div>
+                                                        <div class="form-check mb-3">
+                                                            <input class="form-check-input" id="dressesThree"
+                                                                type="checkbox">
+                                                            <label class="form-check-label" for="dressesThree">High
+                                                                Price</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" id="dressesFour"
+                                                                type="checkbox">
+                                                            <label class="form-check-label" for="dressesFour">Low
+                                                                Price</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                    <ul class="list-group list-group-lg list-group-flush-y list-group-flush-x"
+                        style="background-color: #c7d0d5;">
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-3 col-xl-2">
+                                    <!-- Image -->
+                                    <a href="#"><img src="c1.jpeg" alt="..." class="img-fluid"></a>
+                                </div>
+                                <div class="col">
+                                    <!-- Title -->
+                                    <p class="mb-4 fs-sm fw-bold">
+                                        <a class="text-body" href="#">Lenovo Ideapad slim 3 Intel Core i3</a> <br>
+                                        <span class="text-muted">$539.00</span>
+                                    </p>
+                                    <!-- Text -->
+                                    <div class="fs-sm text-muted">
+                                        Screen Size: 15.6 Inches<br>
+                                        Color: Platinum Grey
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Buy</a>
+                                    </div><br>
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-3 col-xl-2">
+                                    <!-- Image -->
+                                    <a href="#"><img src="c2.jpeg" alt="..." class="img-fluid"></a>
+                                </div>
+                                <div class="col">
+                                    <!-- Title -->
+                                    <p class="mb-4 fs-sm fw-bold">
+                                        <a class="text-body" href="#">HP 15s, 11th Gen Intel Core i3 8GB RAM</a> <br>
+                                        <span class="text-muted">$528.00</span>
+                                    </p>
+                                    <!-- Text -->
+                                    <div class="fs-sm text-muted">
+                                        Screen size: 14.9 Inches <br>
+                                        Color: Jet Black
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Buy</a>
+                                    </div><br>
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-3 col-xl-2">
+                                    <!-- Image -->
+                                    <a href="#"><img src="c5.jpeg" alt="..." class="img-fluid"></a>
+                                </div>
+                                <div class="col">
+                                    <!-- Title -->
+                                    <p class="mb-4 fs-sm fw-bold">
+                                        <a class="text-body" href="#">Samsung Galaxy Book2 Pro 360 Intel 12th Gen i7</a>
+                                        <br>
+                                        <span class="text-muted">$600.00</span>
+                                    </p>
+                                    <!-- Text -->
+                                    <div class="fs-sm text-muted">
+                                        Screen Size: 13.3 Inches<br>
+                                        Color: Silver
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Buy</a>
+                                    </div><br>
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-3 col-xl-2">
+                                    <!-- Image -->
+                                    <a href="#"><img src="c8.jpeg" alt="..." class="img-fluid"></a>
+                                </div>
+                                <div class="col">
+                                    <!-- Title -->
+                                    <p class="mb-4 fs-sm fw-bold">
+                                        <a class="text-body" href="#">Apple 2022 MacBook Air Laptop</a> <br>
+                                        <span class="text-muted">$630.00</span>
+                                    </p>
+                                    <!-- Text -->
+                                    <div class="fs-sm text-muted">
+                                        Screen Size: 13.6 <br>
+                                        Color: Space Grey
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Buy</a>
+                                    </div><br>
+                                    <div class="row">
+                                        <a class="btn btn-sm w-50 btn-primary" href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <nav class="d-flex justify-content-center justify-content-md-end mt-10">
+                        <ul class="pagination pagination-sm text-gray-400">
+                            <li class="page-item">
+                                <a class="page-link page-link-arrow" href="product.html">
+                                    <i class="fa fa-caret-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">6</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link page-link-arrow" href="product.html">
+                                    <i class="fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </div>
+        </div>
+        <br><br>
+        <footer class="cs-footer pt-3" style="background-color: #162737; opacity: 0.9;">
+            <p class="nav d-block" style="color: #fff;" align="center">
+                © All rights reserved. Made by
+                <a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">Foram Mavani</a>
+            </p>
+        </footer>
+</body>
+
+</html>

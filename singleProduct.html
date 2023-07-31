@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap-grid.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style6.css">
+
+    <style>
+        body {
+            background-color: #c7d0d5;
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color:#162737; height: 100px;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="Laptop Ecommerce" style="height: 80px; width: 300px;">
+            </a>
+            <!-- Navigation Links -->
+			<ul class="navbar-nav me-auto" style="padding-left: 670px;">
+				<li class="nav-item">
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-info" type="submit">Search</button>
+					</form>
+				</li>
+			</ul>
+
+			<!-- Shopping Cart and Profile -->
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+
+					<span class="icon" style="color: #0dcaf0;"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+							height="40" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+							<path
+								d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z" />
+						</svg></span>
+					<span class="icon" style="color: #0dcaf0; padding: 15px;"><a data-bs-target="#mymodal"
+							data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40"
+								fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+								<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+								<path fill-rule="evenodd"
+									d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+							</svg></a></span>
+				</li>
+			</ul>
+        </div>
+    </nav><br>
+
+    <ul class="nav nav-tabs" style="padding-left: 40px;">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="homepage1.html">Home</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link active" href="product.html" style="background-color: #60a9ed;">Products</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link" href="Category.html">Category</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+        </li>
+
+    </ul><br>
+    <div class="pt-4 pb-2"
+        style="margin-left: 100px; margin-right: 100px; padding-left: 30px; padding-right: 30px; background-color: #162737;">
+        <div class="container-fluid mt-3 pt-4" style="background-color: #fff; padding-left: 40px;">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><img class="img-thumbnail w-100 d-block" src="product5.jpg"
+                                    alt="Slide Image" loading="lazy" style="height: 350px; width: 200px;"></div>
+                            <div class="carousel-item"><img class="img-thumbnail w-100 d-block" src="product2.jpg"
+                                    alt="Slide Image" style="height: 350px; width: 200px;"></div>
+                            <div class="carousel-item"><img class="img-thumbnail w-100 d-block" src="product3.jpg"
+                                    alt="Slide Image" style="height: 350px; width: 200px;"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span
+                                    class="carousel-control-prev-icon"></span><span
+                                    class="sr-only">Previous</span></a><a class="carousel-control-next"
+                                href="#carousel-1" role="button" data-bs-slide="next"><span
+                                    class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4>Macbook air 8GB RAM/ 256GB SSD</h4>
+                    <div class="price"><span class="mr-2"><i
+                                class="fa fa-rupee text-success"></i>&nbsp;59,999</span><span
+                            class="mr-2 cut">65,000</span><span class="text-success">25% OFF</span></div>
+                    <div class="d-flex flex-row">
+                        <div class="icons mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </div><span>1200 ratings &amp; 564 reviews</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-4 offers mb-1"><i
+                            class="fa fa-check-square-o mt-1"></i><span class="ml-1 font-weight-bold">Bank
+                            Offers</span><span class="ml-1">20% Instant Discount on SBI Credit Cards<br></span></div>
+                    <div class="d-flex align-items-center offers mb-1"><i class="fa fa-check-square-o mt-1"></i><span
+                            class="ml-1 font-weight-bold">Bank Offers</span><span class="ml-1">5% Unlimited Cashback on
+                            Axis Bank Credit Card<br></span></div>
+                    
+                    <div class="d-flex align-items-center mt-3 delivery"><i class="fa fa-map-marker"></i><span
+                            class="ml-2">Delivery by 23 Jul, Tuesday<br></span><span class="ml-2 mr-2">|<br></span><span
+                            class="ml-2 mr-2 text-success">FREE<br></span></div>
+                    <hr>
+                    <div class="d-flex align-items-center mt-2"> <label class="radio"> <input type="radio" name="ram"
+                                value="128GB" checked> <span>128GB</span> </label> <label class="radio"> <input
+                                type="radio" name="ram" value="256GB"> <span>256GB</span> </label> <label class="radio">
+                            <input type="radio" name="ram" value="256GB"> <span>512GB</span> </label> </div>
+                    <div><span class="font-weight-bold">Seller:</span><span class="ml-2">Umiya Electronics</span></div>
+                    <div class="mt-3"><button class="btn btn-outline-dark mr-2" type="button">ADD TO CART <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></button><button
+                            class="btn btn-outline-dark" type="button" style="margin-left: 30px;">Wishlist <span><i class="fa fa-heart" aria-hidden="true"></i></span></button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-5" style="background-color: #fff;">
+            <div class="row">
+              <div class="col-12">
+
+                <!-- Nav -->
+                <div class="nav nav-tabs nav-overflow justify-content-start justify-content-md-center border-bottom">
+                  <a class="nav-link" data-bs-toggle="tab" href="#descriptionTab">Description</a>
+                  <a class="nav-link active" data-bs-toggle="tab" href="#shippingTab">Shipping &amp; Return </a>
+                </div>
+
+                <!-- Content -->
+                <div class="tab-content">
+                  <div class="tab-pane fade" id="descriptionTab">
+                    <div class="row justify-content-center py-9">
+                      <div class="col-12 col-lg-10 col-xl-8">
+                        <div class="row">
+                          <div class="col-12">
+    
+                            <!-- Text -->
+                            <p class="text-gray-500">
+                              Apple 2022 MacBook Pro Laptop with M2 chip: 33.74 cm (13.3-inch) Retina Display, 8GB RAM, 512GB SSD ​​​​​​​Storage, Touch Bar, Backlit Keyboard, FaceTime HD Camera; Space Grey
+                            </p>
+    
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <!-- List -->
+                            <ul class="list list-unstyled mb-md-0 text-gray-500">
+                              <li><strong class="text-body">Brand</strong>: Apple</li>
+                              <li><strong class="text-body">Model Name</strong>: MacBook Air</li>
+                              <li><strong class="text-body">Screen Size</strong>: 13 Inches</li>
+                              <li><strong class="text-body">RAM Memory</strong>: 256 GB</li>
+                            </ul>
+                          </div>
+
+                          <div class="col-12 col-md-6">
+                            <!-- List -->
+                            <ul class="list list-unstyled mb-0">
+                              <li><strong>Colour</strong>: Silver</li>
+                              <li><strong>Hard Disk Size</strong>: 8GB</li>
+                              <li><strong>CPU Model</strong>: Core M Family</li>
+                              <li><strong>Operating System</strong>: MacOS 10.14 Mojave</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade active show" id="shippingTab">
+                    <div class="row justify-content-center py-9">
+                      <div class="col-12 col-lg-10 col-xl-8">
+    
+                        <!-- Table -->
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-sm table-hover">
+                            <thead>
+                              <tr>
+                                <th>Shipping Options</th>
+                                <th>Delivery Time</th>
+                                <th>Price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Standard Shipping</td>
+                                <td>Delivery in 5 - 7 working days</td>
+                                <td>$8.00</td>
+                              </tr>
+                              <tr>
+                                <td>Express Shipping</td>
+                                <td>Delivery in 3 - 5 working days</td>
+                                <td>$12.00</td>
+                              </tr>
+                              <tr>
+                                <td>1 - 2 day Shipping</td>
+                                <td>Delivery in 1 - 2 working days</td>
+                                <td>$12.00</td>
+                              </tr>
+                              <tr>
+                                <td>Free Shipping</td>
+                                <td>
+                                  Living won't the He one every subdue meat replenish
+                                  face was you morning firmament darkness.
+                                </td>
+                                <td>$0.00</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div><br><br>
+    <footer class="cs-footer pt-3" style="background-color: #162737; opacity: 0.9;">
+      <p class="nav d-block" style="color: #fff;" align="center">
+        © All rights reserved. Made by
+        <a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">Foram Mavani</a>
+      </p>
+    </footer>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

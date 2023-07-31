@@ -1,0 +1,11 @@
+body{
+    background-color:#cc99ff; 
+    margin: 0; 
+    padding:0;
+    
+    background: linear-gradient( to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(bg2.jpg) no-repeat; width: 100vw; height:    100vh; 
+    background-position: center;
+    background-size: cover;
+}
+.main{background-color:#3f0c5b; width:4000px; margin: 0 auto;}
+.hdr{background-color: #6cf; height: 100px;}

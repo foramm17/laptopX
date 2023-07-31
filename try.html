@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try code</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style3.css">
+
+    <style>
+        body {
+            background-color: #c7d0d5;
+            height: 700px;
+        }
+
+
+        div {
+            display: block;
+        }
+
+        * {
+            color: black;
+        }
+
+
+        img {
+            border-radius: 100%;
+        }
+
+        .outer {
+            margin: auto;
+            height: 500px;
+            width: 450px;
+            position: relative;
+            background: white;
+            color: black;
+            box-shadow: 1px 1px 3px #929292;
+            padding: 2em 5em;
+            padding-bottom: 6em;
+            margin: 4em auto;
+        }
+
+        .in {
+            width: 100%;
+            padding: 12px 17px;
+            max-width: 236px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+
+        .submit_button:hover {
+            background: green;
+            font-size: 13px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .submit_button {
+            position: absolute;
+            padding: 12px 40px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 9px;
+        }
+        .swiper-pointer-events {
+    touch-action: pan-y;
+}
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.text-center {
+    text-align: center !important;
+}
+.dark-mode .btn-secondary:not(.bg-white) {
+    --si-btn-color: rgba(255, 255, 255, .85);
+    --si-btn-hover-color: #fff;
+    --si-btn-active-color: #fff;
+    --si-btn-border-color: transparent;
+    --si-btn-hover-border-color: transparent;
+    --si-btn-active-border-color: transparent;
+    --si-btn-bg: rgba(255, 255, 255, .06);
+    --si-btn-hover-bg: rgba(255, 255, 255, .12);
+    --si-btn-active-bg: rgba(255, 255, 255, .12);
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color:#162737; height: 100px;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="Laptop Ecommerce" style="height: 80px; width: 300px;">
+            </a>
+        </div>
+    </nav><br>
+
+    <ul class="nav nav-tabs" style="padding-left: 40px;">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="homepage1.html">Home</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link active" href="#" style="background-color: #60a9ed;">Category</a>
+        </li>
+        <li class="nav-item" style="margin-left: 20px;">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+        </li>
+
+    </ul><br>
+    <div class="outer">
+        <form autocomplete="off">
+            <h5 style="text-align:center">SIGN IN TO FORAM'S PAGE</h5>
+            <p>Enter Email</p>
+            <input class="in" type="text" placeholder="Enter Email..." id="a" autocomplete="false" />
+            <p>Enter Password</p>
+            <input class="in" type="password" placeholder="Enter Password..." id="b" autocomplete="false" /><br>
+            <input class="submit_button" value="Submit" type="submit" onmouseenter="fa()" onclick="alert('Submitted')"
+                id="bt" />
+        </form>
+    </div>
+    <script lang="javascript">
+        function fa() {
+            if (a.value == "" || b.value == "") {
+                f()
+                document.getElementById("a").style.border = "3px solid red"
+                document.getElementById("b").style.border = "3px solid red"
+                bt.value = "Submit"
+            }
+            else {
+                document.getElementById("a").style.border = "3px solid green"
+                document.getElementById("b").style.border = "3px solid green"
+                bt.value = "Submit"
+                bt.style.left = "80px";
+                bt.style.padding = "12px 40px"
+            }
+        }
+        flag = 1
+        function f() {
+            if (flag == 1) {
+                bt.style.left = "270px"
+                bt.style.padding = "12px 25px"
+                flag = 2
+            }
+            else if (flag == 2) {
+                bt.style.left = "80px"
+                bt.style.padding = "12px 25px"
+                flag = 1
+            }
+        }</script>
+
+    <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
+        data-swiper-options="{
+    &quot;slidesPerView&quot;: 2,
+    &quot;pagination&quot;: {
+      &quot;el&quot;: &quot;.swiper-pagination&quot;,
+      &quot;clickable&quot;: true
+    },
+    &quot;breakpoints&quot;: {
+      &quot;500&quot;: {
+        &quot;slidesPerView&quot;: 3
+      },
+      &quot;650&quot;: {
+        &quot;slidesPerView&quot;: 4
+      },
+      &quot;900&quot;: {
+        &quot;slidesPerView&quot;: 5
+      },
+      &quot;1100&quot;: {
+        &quot;slidesPerView&quot;: 6
+      }
+    }
+  }">
+        <div class="swiper-wrapper" id="swiper-wrapper-91e32c53a4d4c337" aria-live="polite"
+            style="transition-duration: 0ms; transform: translate3d(-188.6px, 0px, 0px);">
+
+            <!-- Item -->
+            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 6" style="width: 188.6px;">
+                <div class="position-relative text-center border-end mx-n1">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-lg stretched-link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <div class="pt-4">
+                        <h6 class="mb-1">Facebook</h6>
+                        <p class="fs-sm text-muted mb-0">silicon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 6" style="width: 188.6px;">
+                <div class="position-relative text-center border-end mx-n1">
+                    <a href="#" class="btn btn-icon btn-secondary btn-instagram btn-lg stretched-link">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <div class="pt-4">
+                        <h6 class="mb-1">Instagram</h6>
+                        <p class="fs-sm text-muted mb-0">@silicon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 6" style="width: 188.6px;">
+                <div class="position-relative text-center border-end mx-n1">
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter btn-lg stretched-link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <div class="pt-4">
+                        <h6 class="mb-1">Twitter</h6>
+                        <p class="fs-sm text-muted mb-0">@silicon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide" role="group" aria-label="4 / 6" style="width: 188.6px;">
+                <div class="position-relative text-center border-end mx-n1">
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin btn-lg stretched-link">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <div class="pt-4">
+                        <h6 class="mb-1">LinkedIn</h6>
+                        <p class="fs-sm text-muted mb-0">Silicon Inc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide" role="group" aria-label="5 / 6" style="width: 188.6px;">
+                <div class="position-relative text-center border-end mx-n1">
+                    <a href="#" class="btn btn-icon btn-secondary btn-youtube btn-lg stretched-link">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                    <div class="pt-4">
+                        <h6 class="mb-1">YouTube</h6>
+                        <p class="fs-sm text-muted mb-0">Silicon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide" role="group" aria-label="6 / 6" style="width: 188.6px;">
+                <div class="position-relative text-center border-end mx-n1">
+                    <a href="#" class="btn btn-icon btn-secondary btn-dribbble btn-lg stretched-link">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    </a>
+                    <div class="pt-4">
+                        <h6 class="mb-1">Dribbble</h6>
+                        <p class="fs-sm text-muted mb-0">Silicon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination (bullets) -->
+        <div
+            class="swiper-pagination position-relative bottom-0 pt-3 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                aria-label="Go to slide 2" aria-current="true"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+
+
+    <script lang="javascript">
+        document.querySelector("#__next > footer > div")
+    </script>
+</body>
+
+</html>
